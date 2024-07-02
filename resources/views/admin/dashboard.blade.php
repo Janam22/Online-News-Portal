@@ -1,6 +1,6 @@
 @extends('admin.layouts.master')
 @section('content')
 
-<p>Hello Admin1</p>
+<p>Hello Admin</p>
 
 @endsection
