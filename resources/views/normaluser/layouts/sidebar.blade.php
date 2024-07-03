@@ -43,7 +43,7 @@
 
       <hr class="sidebar-divider">
 
-      <li class="nav-item"><a class="nav-link" href="./customers.php"><i class="fas fa-users"></i><span>Manage Guests</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="./customers.php"><i class="fas fa-users"></i><span>View News</span></a></li>
 
 <script>
 $(document).ready(function() {
