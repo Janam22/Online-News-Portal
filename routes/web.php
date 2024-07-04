@@ -3,6 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\categoryadmin\categoryAdminController;
+use App\Http\Controllers\normaluser\NormalUserController;
+use App\Http\Controllers\news\NewsController;
 
 
 Route::get('/', function () {
@@ -42,6 +45,15 @@ Route::middleware('adminAuth')->prefix('admin')->group(function(){
     Route::post('/profile/update', [ProfileController::class, 'adminprofileviewupdate'])->name('admin.profile.update');
     Route::get('/change-password', [ProfileController::class, 'adminchangepasswordview'])->name('admin.change-password');
     Route::post('/change-password/update', [ProfileController::class, 'adminchangepasswordviewupdate'])->name('admin.profile.change-password');
+
+    //manage category admin users
+    Route::get('/manage-categoryadmin-users', [CategoryAdminController::class, 'managecategoryadminusers'])->name('manage.categoryadmin.user');
+    
+    //manage normal users
+    Route::get('/manage-normal-users', [NormalUserController::class, 'managenormalusers'])->name('manage.normal.user');
+
+    //manage news
+    Route::get('/manage-news', [NewsController::class, 'managenews'])->name('manage.news');
 
 });
 

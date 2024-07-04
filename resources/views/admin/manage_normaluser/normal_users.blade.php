@@ -34,7 +34,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td><a href = "" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Remove User</a><br><a href = "" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Remove User</a></td>
+                    <td><a href = "" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Make Category Admin</a><br><a href = "" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Remove User</a></td>
                 </tr>
 
 
