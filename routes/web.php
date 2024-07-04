@@ -3,9 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\categoryadmin\categoryAdminController;
-use App\Http\Controllers\normaluser\NormalUserController;
-use App\Http\Controllers\news\NewsController;
+use App\Http\Controllers\admin\categoryadmin\categoryAdminController;
+use App\Http\Controllers\admin\normaluser\NormalUserController;
+use App\Http\Controllers\admin\news\NewsController;
 
 
 Route::get('/', function () {
