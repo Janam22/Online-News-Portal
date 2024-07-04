@@ -1,4 +1,4 @@
-@extends('categoryadmin.layouts.master')
+@extends('admin.layouts.master')
 @section('content')
 
 <p>Hello Admin - I am add_feature.</p>

@@ -43,11 +43,11 @@
 
       <hr class="sidebar-divider">
 
-      <li class="nav-item"><a class="nav-link" href="./customers.php"><i class="fas fa-users"></i><span>Manage Category User</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-users"></i><span>Manage Category User</span></a></li>
 
-      <li class="nav-item"><a class="nav-link" href="./customers.php"><i class="fas fa-users"></i><span>Manage Normal User</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-users"></i><span>Manage Normal User</span></a></li>
 
-      <li class="nav-item"><a class="nav-link" href="./customers.php"><i class="fas fa-users"></i><span>Manage News</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-users"></i><span>Manage News</span></a></li>
 
 <script>
 $(document).ready(function() {
