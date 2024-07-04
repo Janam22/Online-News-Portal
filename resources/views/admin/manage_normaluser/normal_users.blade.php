@@ -19,11 +19,9 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"> 
                <thead>
                    <tr>
-      			        <th>Full Name</th>
-      			        <th>Country</th> 
-      			        <th>City</th>
-      			        <th>Number</th>
-      			        <th>Email</th>
+      			        <th>Name</th>
+      			        <th>Email</th> 
+      			        <th>Profile Photo</th>
       			        <th>Registered Date</th>
       			        <th>Action</th>
                    </tr>
@@ -36,9 +34,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href = "" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Remove User</a></td>
+                    <td><a href = "" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Remove User</a><br><a href = "" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Remove User</a></td>
                 </tr>
 
 

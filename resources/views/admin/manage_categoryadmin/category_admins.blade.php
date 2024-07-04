@@ -19,11 +19,9 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0"> 
                <thead>
                    <tr>
-      			        <th>Full Name</th>
-      			        <th>Country</th> 
-      			        <th>City</th>
-      			        <th>Number</th>
-      			        <th>Email</th>
+      			        <th>Name</th>
+      			        <th>Email</th> 
+      			        <th>Profile Photo</th>
       			        <th>Registered Date</th>
       			        <th>Action</th>
                    </tr>
@@ -32,8 +30,6 @@
 
 
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
