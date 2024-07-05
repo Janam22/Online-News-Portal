@@ -10,8 +10,8 @@ use Illuminate\Http\Request;
 class AdminUserController extends Controller
 {
     public function manageusers(){
-        
-        $manageusers = DB::select('SELECT * FROM users WHERE type !=?', [2]);
+        $authenticateduser = Auth::user()->id;
+        $manageusers = DB::select('SELECT * FROM users WHERE id !=?', [$authenticateduser]);
         return view('admin.manage_users.users', compact('manageusers'));
     }
 }
