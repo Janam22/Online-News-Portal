@@ -37,7 +37,12 @@
                     <td>
                       <img src="{{ asset('storage/users_profile_photo/' . $users -> profile_photo_path) }}" alt="Profile" width="100"></td>
                     <td>{{ $users -> created_at }}</td>
-                    <td><a href = "#" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Remove User</a></td>
+                    <td>
+                      @if ($users-> type == 0)
+                      <a href = "#" onclick="return confirm(\'Are you sure you want to make this user Category Admin?\');">Make Category Admin</a><br>
+                      @endif
+                      <a href = "#" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Remove User</a>
+                    </td>
                     
                 </tr>
             @endforeach
