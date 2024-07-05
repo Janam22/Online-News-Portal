@@ -47,8 +47,7 @@
 
       <li class="nav-item"><a class="nav-link" href="{{ route('manage.news') }}"><i class="fas fa-users"></i><span>Manage News</span></a></li>
       <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-users"></i><span>Manage News Category</span></a></li>
-      <li class="nav-item"><a class="nav-link" href="{{ route('manage.categoryadmin.user') }}"><i class="fas fa-users"></i><span>Manage Category User</span></a></li>
-      <li class="nav-item"><a class="nav-link" href="{{ route('manage.normal.user') }}"><i class="fas fa-users"></i><span>Manage Normal User</span></a></li>
+      <li class="nav-item"><a class="nav-link" href="{{ route('manage.users') }}"><i class="fas fa-users"></i><span>Manage Users</span></a></li>
 
 <script>
 $(document).ready(function() {

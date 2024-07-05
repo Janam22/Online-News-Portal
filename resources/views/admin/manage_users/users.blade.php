@@ -5,14 +5,14 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">    
-      <title>Category Admin List</title>
+      <title>Users List</title>
 </head>
 
 <body>
 
             <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-2 font-weight-bold text-primary">Category Admin List&nbsp;</h4>
+              <h4 class="m-2 font-weight-bold text-primary">Users List&nbsp;</h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -29,14 +29,14 @@
           <tbody>
 
 
-            @foreach ($categoryadminusers as $causers)
+            @foreach ($manageusers as $users)
                 <tr>
                       
-                    <td>{{ $causers -> name }}</td>
-                    <td>{{ $causers -> email }}</td>
+                    <td>{{ $users -> name }}</td>
+                    <td>{{ $users -> email }}</td>
                     <td>
-                      <img src="{{ asset('storage/users_profile_photo/' . $causers -> profile_photo_path) }}" alt="Profile" width="100"></td>
-                    <td>{{ $causers -> created_at }}</td>
+                      <img src="{{ asset('storage/users_profile_photo/' . $users -> profile_photo_path) }}" alt="Profile" width="100"></td>
+                    <td>{{ $users -> created_at }}</td>
                     <td><a href = "#" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Remove User</a></td>
                     
                 </tr>
