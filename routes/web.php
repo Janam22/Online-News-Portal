@@ -45,7 +45,7 @@ Route::middleware('adminAuth')->prefix('admin')->group(function(){
     Route::get('/change-password', [ProfileController::class, 'adminchangepasswordview'])->name('admin.change-password');
     Route::post('/change-password/update', [ProfileController::class, 'adminchangepasswordviewupdate'])->name('admin.profile.change-password');
 
-    //manage category admin users
+    //manage users
     Route::get('/manage-users', [AdminUserController::class, 'manageusers'])->name('manage.users');
     
     //manage news
