@@ -17,21 +17,21 @@ class UserSeeder extends Seeder
         $normaluser->name = 'Normal User';
         $normaluser->email = 'normaluser@gmail.com';
         $normaluser->password = Hash::make('admin');
-        $normaluser->type = 0;
+        $normaluser->type = 3;
         $normaluser->save();
 
         $categoryadmin = new User();
         $categoryadmin->name = 'Category Admin';
         $categoryadmin->email = 'categoryadmin@gmail.com';
         $categoryadmin->password = Hash::make('admin');
-        $categoryadmin->type = 1;
+        $categoryadmin->type = 2;
         $categoryadmin->save();
 
         $admin = new User();
         $admin->name = 'Admin';
         $admin->email = 'admin@gmail.com';
         $admin->password = Hash::make('admin');
-        $admin->type = 2;
+        $admin->type = 1;
         $admin->save();
 
     }

@@ -22,6 +22,7 @@
       			        <th>Name</th>
       			        <th>Email</th> 
       			        <th>Profile Photo</th>
+      			        <th>User Type</th>
       			        <th>Registered Date</th>
       			        <th>Action</th>
                    </tr>
@@ -35,10 +36,12 @@
                     <td>{{ $users -> name }}</td>
                     <td>{{ $users -> email }}</td>
                     <td>
-                      <img src="{{ asset('storage/users_profile_photo/' . $users -> profile_photo_path) }}" alt="Profile" width="100"></td>
+                      <img src="{{ asset('storage/users_profile_photo/' . $users -> profile_photo_path) }}" alt="Profile" width="100">
+                    </td>
+                    <td>{{ $users -> type_name }}</td>
                     <td>{{ $users -> created_at }}</td>
                     <td>
-                      @if ($users-> type == 0)
+                      @if ($users-> type == 3)
                       <a href = "#" onclick="return confirm(\'Are you sure you want to make this user Category Admin?\');">Make Category Admin</a><br>
                       @endif
                       <a href = "#" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Remove User</a>

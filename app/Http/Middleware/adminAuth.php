@@ -16,7 +16,7 @@ class adminAuth
      */
     public function handle($request, Closure $next)
     {
-        if ($request->user() && $request->user()->type == 2) {
+        if ($request->user() && $request->user()->type == 1) {
             return $next($request);
         }
         return response()->json('Opps! You do not have permission to access.');

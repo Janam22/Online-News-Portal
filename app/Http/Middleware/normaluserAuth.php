@@ -15,7 +15,7 @@ class normaluserAuth
      */
     public function handle($request, Closure $next)
     {
-        if ($request->user() && $request->user()->type == 0) {
+        if ($request->user() && $request->user()->type == 3) {
             return $next($request);
         }
         return response()->json('Opps! You do not have permission to access.');

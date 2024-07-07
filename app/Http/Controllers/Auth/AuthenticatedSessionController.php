@@ -44,13 +44,13 @@ class AuthenticatedSessionController extends Controller
         if(Auth::attempt(['email'=> $input['email'], 'password'=> $input['password']])){
 
             // check the user role
-            if(Auth::user()->type == 0){
+            if(Auth::user()->type == 3){
                 return redirect()->route('normaluser.dashboard');
             }
-            elseif (Auth::user()->type == 1) {
+            elseif (Auth::user()->type == 2) {
                 return redirect()->route('categoryadmin.dashboard');
             }
-            elseif (Auth::user()->type == 2) {
+            elseif (Auth::user()->type == 1) {
                 return redirect()->route('dashboard');
             }
         }
