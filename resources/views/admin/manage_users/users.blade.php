@@ -12,7 +12,7 @@
 
             <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-2 font-weight-bold text-primary">Users List&nbsp;&nbsp;<a  href="#" type="button" class="btn btn-primary bg-gradient-primary" style="border-radius: 0px;"><i class="fas fa-fw fa-plus"></i></a></h4>
+              <h4 class="m-2 font-weight-bold text-primary">Users List&nbsp;&nbsp;<a  href="{{ route('add.user') }}" type="button" class="btn btn-primary bg-gradient-primary" style="border-radius: 0px;"><i class="fas fa-fw fa-plus"></i></a></h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">

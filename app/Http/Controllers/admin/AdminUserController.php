@@ -14,4 +14,8 @@ class AdminUserController extends Controller
         $manageusers = DB::select('SELECT users.*, user_type.user_type as type_name FROM users join user_type WHERE users.type=user_type.id AND users.id !=?', [$authenticateduser] );
         return view('admin.manage_users.users', compact('manageusers'));
     }
+
+    public function adduser(){
+        return view('admin.manage_users.add_user');
+    }
 }

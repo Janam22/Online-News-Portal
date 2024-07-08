@@ -54,6 +54,7 @@ Route::middleware('adminAuth')->prefix('admin')->group(function(){
     
     //manage users
     Route::get('/manage-users', [AdminUserController::class, 'manageusers'])->name('manage.users');
+    Route::get('/add-user', [AdminUserController::class, 'adduser'])->name('add.user');
 
 });
 
