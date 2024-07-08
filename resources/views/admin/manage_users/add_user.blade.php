@@ -18,7 +18,7 @@
             <div class="card-body">
 
     	<form action="{{ route('user.store') }}" method="post" enctype="multipart/form-data">
-
+          @csrf
 	         <div class="form-group row text-left">
                 <label class="col-lg-4 col-form-label">Name : </label>
                 <input type="text" class="form-control" name="name" value="" placeholder="Name" required="">
