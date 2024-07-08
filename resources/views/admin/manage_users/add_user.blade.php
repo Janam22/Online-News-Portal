@@ -17,16 +17,21 @@
             </div>
             <div class="card-body">
 
-    	<form action="#" method="post">
+    	<form action="{{ route('user.store') }}" method="post" enctype="multipart/form-data">
 
 	         <div class="form-group row text-left">
-                <label class="col-lg-4 col-form-label" for="val-digits">Name : </label>
-                <input type="text" class="form-control" id="val-digits" name="name" value="" placeholder="Name" minlength="1" maxlength="10" required="">
+                <label class="col-lg-4 col-form-label">Name : </label>
+                <input type="text" class="form-control" name="name" value="" placeholder="Name" required="">
 	         </div>
 
            <div class="form-group row text-left">
                 <label class="col-lg-4 col-form-label" for="val-username">Email : </label>
         	      <input type="text" class="form-control" placeholder="Email" value="" id="email" name="email" required="">
+           </div>
+           
+           <div class="form-group row text-left">
+                <label class="col-lg-4 col-form-label" for="val-username">Password : </label>
+        	      <input type="password" class="form-control" placeholder="Password" value="" id="password" name="password" required="">
            </div>
 
            
@@ -42,7 +47,7 @@
 
 	         <div class="form-group row text-left">
                 <label class="col-lg-4 col-form-label" for="val-skill">User Type : </label>
-                <select class="form-control" id="val-skill" name="roomtype" required="">
+                <select class="form-control" id="val-skill" name="user_type" required="">
                     <option value="" disabled>Select</option>
                   @foreach ($usertype as $user_type)
                     <option value="{{ $user_type -> id}}">{{ $user_type -> user_type }}</option>
