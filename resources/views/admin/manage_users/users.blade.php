@@ -12,7 +12,7 @@
 
             <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h4 class="m-2 font-weight-bold text-primary">Users List&nbsp;</h4>
+              <h4 class="m-2 font-weight-bold text-primary">Users List&nbsp;&nbsp;<a  href="#" type="button" class="btn btn-primary bg-gradient-primary" style="border-radius: 0px;"><i class="fas fa-fw fa-plus"></i></a></h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
@@ -36,7 +36,7 @@
                     <td>{{ $users -> name }}</td>
                     <td>{{ $users -> email }}</td>
                     <td>
-                      <img src="{{ asset('storage/users_profile_photo/' . $users -> profile_photo_path) }}" alt="Profile" width="100">
+                      <img class="img-profile rounded-circle" src="{{ asset('storage/users_profile_photo/' . $users -> profile_photo_path) }}" alt="Profile" width="100">
                     </td>
                     <td>{{ $users -> type_name }}</td>
                     <td>{{ $users -> created_at }}</td>
@@ -44,6 +44,7 @@
                       @if ($users-> type == 3)
                       <a href = "#" onclick="return confirm(\'Are you sure you want to make this user Category Admin?\');">Make Category Admin</a><br>
                       @endif
+                      <a href = "#">Edit User</a><br>
                       <a href = "#" onclick="return confirm(\'Are you sure you want to delete this customer?\');">Remove User</a>
                     </td>
                     
