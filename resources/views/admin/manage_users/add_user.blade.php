@@ -19,47 +19,40 @@
 
     	<form action="#" method="post">
 
-	   <div class="form-group row text-left">
-                <label class="col-lg-4 col-form-label" for="val-digits">Room No : </label>
-                <input type="text" class="form-control" id="val-digits" name="room_no" value="" placeholder="Room No" minlength="1" maxlength="10" required="">
-	   </div>
+	         <div class="form-group row text-left">
+                <label class="col-lg-4 col-form-label" for="val-digits">Name : </label>
+                <input type="text" class="form-control" id="val-digits" name="name" value="" placeholder="Name" minlength="1" maxlength="10" required="">
+	         </div>
 
            <div class="form-group row text-left">
-                <label class="col-lg-4 col-form-label" for="val-username">Floor No : </label>
-        	<input type="text" class="form-control" placeholder="Floor No" value="" id="sub_name" name="floor_no" required="">
+                <label class="col-lg-4 col-form-label" for="val-username">Email : </label>
+        	      <input type="text" class="form-control" placeholder="Email" value="" id="email" name="email" required="">
            </div>
 
-	   <div class="form-group row text-left">
-                <label class="col-lg-4 col-form-label" for="val-skill">Room Type : </label>
+           
+           <div class="form-group row text-left">
+                <div class="col-sm-3" style="padding-top: 5px;">
+                 Profile Image:
+                </div>
+                <div class="col-sm-9">
+                <img src="" alt="Profile" width="100">
+                <input type="file" id="upload" name="profile_photo_path"  accept="image/png, image/gif, image/jpeg" />
+                </div>
+           </div>
+
+	         <div class="form-group row text-left">
+                <label class="col-lg-4 col-form-label" for="val-skill">User Type : </label>
                 <select class="form-control" id="val-skill" name="roomtype" required="">
-                <option value="">Please select</option>
-
+                    <option value="" disabled>Select</option>
+                  @foreach ($usertype as $user_type)
+                    <option value="{{ $user_type -> id}}">{{ $user_type -> user_type }}</option>
+                  @endforeach
                 </select>
-	   </div>
- 
-	   <div class="form-group row text-left">
-                <label class="col-lg-4 col-form-label" for="val-digits">Price Per Room : </label>
-                <input type="text" class="form-control" id="val-digits" value="" name="priceperroom" placeholder="Price Per Room" minlength="3" maxlength="6" required>
-	   </div>
-
-	   <div class="form-group row text-left">
-                <label class="col-lg-4 col-form-label" for="val-digits">Amenities : </label>
-                <textarea type="text" class="form-control" id="val-digits" name="amenities" placeholder="Amenities" required></textarea>
-	   </div>
-
-
-	   <div class="form-group row text-left">
-                <label class="col-lg-4 col-form-label" for="val-digits">Available Status : </label>
-                <select class="form-control" id="val-skill" name="available_status" required="">
-                <option value="">Please select</option>
-                <option value="Y">Yes</option>
-                <option value="N">No</option>
-                </select>
-	   </div>
+	         </div>
 
             <hr>     
         	<button type="submit" style="cursor: pointer;" class="btn btn-primary bg-gradient-primary">Add User Details</button>
-          </form>  
+      </form>  
 
 
                     </div>

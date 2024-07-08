@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\admin;
 use App\Models\User;
+use App\Models\UserType;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -16,6 +17,7 @@ class AdminUserController extends Controller
     }
 
     public function adduser(){
-        return view('admin.manage_users.add_user');
+        $usertype = UserType::all();
+        return view('admin.manage_users.add_user', compact('usertype'));
     }
 }
