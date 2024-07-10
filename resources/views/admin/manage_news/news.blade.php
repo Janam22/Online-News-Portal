@@ -35,7 +35,7 @@
                     <td>{{ $news->content }}</td>
                     <td>{{ $news->author }}</td>
                     <td>{{ $news->created_at }}</td>
-                    <td><a href = "#" onclick="return confirm(\'Are you sure you want to delete this news?\');">Remove news</a></td>
+                    <td><a href = "{{ route('delete.news', $news->id) }}" onclick="return confirm(\'Are you sure you want to delete this news?\');">Remove news</a></td>
                 </tr>
 
           @endforeach

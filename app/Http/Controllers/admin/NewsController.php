@@ -28,4 +28,14 @@ class NewsController extends Controller
 
     }
 
+    public function deletenews($id){
+        $news = News::Find($id);
+        if ($news) {
+            $news->delete();
+            return redirect()->route('manage.news')->with('success', 'News deleted successfully.');
+        } else {
+            return redirect()->route('manage.news')->with('error', 'Error occured during deletion.');
+        }
+    }
+
 }
