@@ -48,6 +48,7 @@ Route::middleware('adminAuth')->prefix('admin')->group(function(){
     
     //manage news
     Route::get('/manage-news', [NewsController::class, 'managenews'])->name('manage.news');
+    Route::post('/store-news', [NewsController::class, 'storenews'])->name('store.news');
     
     //manage news category
     Route::get('/manage-news-category', [NewsCategoryController::class, 'managenewscategory'])->name('manage.news.category');
